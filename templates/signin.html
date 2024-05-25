@@ -1,0 +1,33 @@
+<style>
+    .form-label {
+        color: rgb(10, 80, 100); /* Altera a cor das etiquetas de formulário para branco */
+    }
+
+    .card-body {
+        background-color: black; /* Altera a cor de fundo do formulário para um tom de cinza transparente */
+    }
+
+    .card {
+        background-color: transparent; /* Garante que o plano de fundo da carta seja transparente */
+        border: 1px solid rgb(10, 80, 100); /* Adiciona uma borda branca ao redor do formulário */
+    }
+</style>
+
+<main class="container mt-5">
+	<div class="row">
+		<div class="col-md-5 offset-md-3">
+			<form action="/sigin/" method="POST" class="card card-body">
+				<h1 class="text-center">Logar</h1>
+				<div class="mb-3">
+					<label for="username" class="form-label">Nome</label>
+					<input type="text" class="form-control" name="username" id="username">
+				</div>
+				<div class="mb-3">
+					<label for="password1" class="form-label">Senha</label>
+					<input type="password" class="form-control" name="password" id="password">
+				</div>
+				<button type="submit" class="btn btn-primary">Logar</button>
+			</form>
+		</div>
+	</div>
+</main>
